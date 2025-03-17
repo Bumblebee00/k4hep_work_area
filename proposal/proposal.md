@@ -1,4 +1,4 @@
-Evaluation task and short proposal of Mattia Micheletta Merlin for GSoC2025 [Geant4-FastSim project](https://hepsoftwarefoundation.org/gsoc/2025/proposal_Geant4-fastsim_representation.html): Data Representation Optimisation for Generative Model-based Fast Calorimeter Shower Simulation
+Evaluation task and [short proposal](proposal/proposal.md) of Mattia Micheletta Merlin for GSoC2025 [Geant4-FastSim project](https://hepsoftwarefoundation.org/gsoc/2025/proposal_Geant4-fastsim_representation.html): Data Representation Optimisation for Generative Model-based Fast Calorimeter Shower Simulation
 
 - [Evaluation Task](#evaluation-task)
   - [DDSIM Command](#ddsim-command)
