@@ -19,6 +19,11 @@ mean = ak.mean(flat_energy)
 std = ak.std(flat_energy)
 print(f"energy mean: {mean*1e3:.6f} MeV, standard deviation: {std:.6f}")
 
+print("Number of hits caused by the first, second, etc... event:")
+print(ak.num(energy))  # Show the number of hits in each event
+print("Number of events: ", len(energy))
+print("Total number of hits: ", len(flat_energy))
+
 # Figure 1: Energy histogram
 fig1 = plt.figure(figsize=(10, 6))
 plt.hist(flat_energy, bins=100, histtype="step", color="blue")

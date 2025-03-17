@@ -38,6 +38,12 @@ And I calculated:
 ```
 energy mean: 0.718140 MeV, standard deviation: 0.001408
 ```
+Regarding the number of events, I found this aray to contain 100 array (each one correspondin to a photon simulation), each one of roughly 350 elements:
+```
+Number of hits caused by the first, second, etc... event:
+[345, 356, 371, 377, 368, 387, 413, 379, ..., 381, 383, 384, 356, 366, 383, 414]
+```
+For a grand total of 37639 hits.
 
 # Project proposal
 > explore different approaches to clustering these individual simulated hits into a point cloud, seeking to minimise the number of points while preserving key calorimetric observables.
