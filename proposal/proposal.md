@@ -34,6 +34,7 @@ that simulates for a hundred times firing a photon in the desired direction with
 ## ROOT file analysis
 This file saves the output in ROOT format, that I analyzed with the python library `uproot` (file `visualize.py`). Among all the branches of the output file, I found the `ECalBarrelCollection/ECalBarrelCollection.energy` branch, which appeared to contain the hit energies in the barrel region of the electromagnetic calorimeter. Here is a histogram of these energies
 ![](ecal_hit_distribution.png)
+
 And I calculated:
 ```
 energy mean: 0.718140 MeV, standard deviation: 0.001408
@@ -75,6 +76,7 @@ Here are the observables of the methods I am about to describe:
 ## Original point cloud
 To have a reference, here is a 3d scatter plot of the original pointcloud that I am about to cluster:
 ![](original.png)
+
 These are all the hits originated from the first of the hundred photons.
 
 ## Grid based
@@ -101,8 +103,10 @@ As we can see from the observables, the average energy of hits is conserved, but
 ## Density-based spatial clustering of applications with noise (DBSCAN)
 Another interesting [algorithm](https://en.wikipedia.org/wiki/DBSCAN) i read about, but gave strange non promising results:
 ![](dbscan.png)
+
 This representation totally loses the geometrical shape of the shower. Trying to cluster with DBSCAN on more data gives results like this:
 ![](dbscan_more.png)
+
 So it seems that all the high energy events in the beam direction "suck toghether" all the smaller events near them.
 
 ## Mean shift clustering
